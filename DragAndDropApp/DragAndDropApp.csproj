@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="DragableCode\DraggableListAdapter.cs" />
     <Compile Include="DragableCode\DraggableListView.cs" />
+    <Compile Include="FinishActivity.cs" />
     <Compile Include="HelpActivity.cs" />
     <Compile Include="DragableCode\IDraggableListAdapter.cs" />
     <Compile Include="MainActivity.cs" />
@@ -99,12 +100,20 @@
     <PackageReference Include="Xamarin.Android.Support.Design" Version="27.0.2.1" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Resources\drawable\" />
+    <AndroidResource Include="Resources\drawable\helpicon.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\activity_Help.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\activity_finish.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\welldone.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

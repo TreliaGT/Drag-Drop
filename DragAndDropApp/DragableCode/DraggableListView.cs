@@ -436,7 +436,8 @@ namespace DragAndDropApp
 			} else {
 				TouchEventsCancelled ();
 			}
-		}
+
+        }
 
 		/// <summary>
 		/// By Implementing the ITypeEvaluator Inferface, we are able to set this as the the ITypeEvaluator for the hoverViewAnimator
@@ -460,12 +461,14 @@ namespace DragAndDropApp
 		{
 			return (int)(start + fraction * (end - start));
 		}
+    
+      
 
-		/// <summary>
-		/// Resets all the appropriate fields to a default state.
-		/// Resets the visibility of the currently mobile view
-		/// </summary>
-		void TouchEventsCancelled ()
+        /// <summary>
+        /// Resets all the appropriate fields to a default state.
+        /// Resets the visibility of the currently mobile view
+        /// </summary>
+        void TouchEventsCancelled ()
 		{
 			mobileView = GetViewForID (mMobileItemId);
 			if (mCellIsMobile) {
@@ -482,6 +485,11 @@ namespace DragAndDropApp
 			Enabled = true;
 			mCellIsMobile = false;
 			mActivePointerId = INVALID_POINTER_ID;
+
+ 
+
 		}
-	}
+
+    
+    }
 }

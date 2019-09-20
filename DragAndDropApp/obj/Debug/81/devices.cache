@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Devices>
-  <Device id="05cc5e12002d9d08">
+  <Device id="05cc5aee3443f1ec">
     <ResultingAbi>armeabi-v7a</ResultingAbi>
-    <SdkVersion>23</SdkVersion>
+    <SdkVersion>22</SdkVersion>
   </Device>
 </Devices>

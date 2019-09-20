@@ -32,10 +32,11 @@ C:\Users\V244682\source\repos\DragAndDropApp\DragAndDropApp\obj\Debug\81\res\mip
 C:\Users\V244682\source\repos\DragAndDropApp\DragAndDropApp\obj\Debug\81\res\mipmap-xxxhdpi\ic_launcher.png
 C:\Users\V244682\source\repos\DragAndDropApp\DragAndDropApp\obj\Debug\81\res\mipmap-xxxhdpi\ic_launcher_foreground.png
 C:\Users\V244682\source\repos\DragAndDropApp\DragAndDropApp\obj\Debug\81\res\mipmap-xxxhdpi\ic_launcher_round.png
+C:\Users\V244682\source\repos\DragAndDropApp\DragAndDropApp\obj\Debug\81\res\layout\activity_help.xml
+C:\Users\V244682\source\repos\DragAndDropApp\DragAndDropApp\obj\Debug\81\res\layout\activity_finish.xml
 C:\Users\V244682\source\repos\DragAndDropApp\DragAndDropApp\obj\Debug\81\R.cs.flag
 C:\Users\V244682\source\repos\DragAndDropApp\DragAndDropApp\obj\Debug\81\R.txt
 C:\Users\V244682\source\repos\DragAndDropApp\DragAndDropApp\obj\Debug\81\uploadflags.txt
-C:\Users\V244682\source\repos\DragAndDropApp\DragAndDropApp\obj\Debug\81\res\layout\activity_help.xml
 C:\Users\V244682\source\repos\DragAndDropApp\DragAndDropApp\bin\Debug\Mono.Android.pdb
 C:\Users\V244682\source\repos\DragAndDropApp\DragAndDropApp\bin\Debug\mscorlib.pdb
 C:\Users\V244682\source\repos\DragAndDropApp\DragAndDropApp\bin\Debug\System.Core.pdb

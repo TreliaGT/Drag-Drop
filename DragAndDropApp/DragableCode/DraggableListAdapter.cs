@@ -16,14 +16,13 @@ namespace DragAndDropApp
   
         public class DraggableListAdapter : BaseAdapter, IDraggableListAdapter
         {
-            public List<string> Items { get; set; }
-
-
-            public int mMobileCellPosition { get; set; }
+            public List<int> Items { get; set; }
+        bool IsSorted = false;
+        public int mMobileCellPosition { get; set; }
 
             Activity context;
 
-            public DraggableListAdapter(Activity context, List<string> items) : base()
+            public DraggableListAdapter(Activity context, List<int> items) : base()
             {
                 Items = items;
                 this.context = context;
@@ -54,7 +53,7 @@ namespace DragAndDropApp
                 if (text != null)
                 {
                     //text.Text = position.ToString();
-                    text.Text = Items[position]; // I changed this line to show the item values in the list
+                    text.Text = Items[position].ToString(); // I changed this line to show the item values in the list
                 }
 
                 cell.Visibility = mMobileCellPosition == position ? ViewStates.Invisible : ViewStates.Visible;
@@ -77,7 +76,37 @@ namespace DragAndDropApp
                 Items[indexOne] = Items[indexTwo];
                 Items[indexTwo] = oldValue;
                 mMobileCellPosition = indexTwo;
+         
                 NotifyDataSetChanged();
+            TrueEvent();
+        }
+
+        /**
+         * Checks if the list is sorted 
+         */
+        public void TrueEvent()
+        {
+            IsSorted = CheckNumbers();
+            if (IsSorted == true)
+            {
+                var main = context as MainActivity;
+                main.FinishMenu();
             }
+        }
+          public bool CheckNumbers()
+            {
+       
+            for (int i = 1; i < Items.Count; i++)
+                {
+                 if (Items[i - 1].CompareTo(Items[i]) > 0) // If previous is bigger, return false
+                    {
+                        return false;
+                    }
+                }
+            return true;
+
+       
+          }
+
         }
     }

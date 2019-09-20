@@ -30,7 +30,8 @@ namespace DragAndDropApp
             };
 
             var info = FindViewById(Resource.Id.TextInfo) as TextView;
-            info.Text = "To use this program please go back and hold the items for more then 10 seconds before trying to drag them around";
+            info.Text = "To use this program please go back and hold the items for more then 10 seconds before trying to drag them around." +
+                "Sort the numbers by 1 to 5";
         }
        
     }
