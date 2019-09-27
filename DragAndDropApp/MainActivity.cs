@@ -41,6 +41,7 @@ namespace DragAndDropApp
             };
             list.Adapter = new DraggableListAdapter(this, items);
 
+
         }
 
         /**
